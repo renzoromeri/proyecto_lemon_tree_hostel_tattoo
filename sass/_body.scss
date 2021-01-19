@@ -1,0 +1,119 @@
+header{
+    width:100%;
+    margin-top: 0;
+    background-color: black;
+    /*border-radius: 10px;
+    border: solid 3px yellow;*/
+  }
+  
+  body {
+      /*background-image: url(../img/fondoblanco.jpg);
+      background-size: cover;*/
+      background-color: $blanco;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      line-height: 1.0;
+      /*border: dotted 10px $negro;*/
+      opacity: 0.9;
+      margin-top: 0;
+      margin-bottom: 0px;
+  }
+
+  
+  
+.tamanio-index{ 
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 40px;
+}
+  
+title{
+  display: none;
+} 
+
+
+
+
+
+.a-body{
+  @extend.a-main;
+    font-size: 30px;
+    color: $blanco;
+    -webkit-text-stroke: 1px $negro;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text-1 {
+    /*background-color:whitesmoke;*/
+    background-image:$fondo-rojo;
+    border:solid 3px $negro;
+    margin:0;
+    padding:10px 15px;
+  }
+  
+  .top-1 {
+    right: -10px;
+    position:absolute;
+    top:0px;
+    transform:skew(-15deg);
+  }
+
+  .text-2 {
+    /*background-color:whitesmoke;*/
+    background-image:$fondo-verde;
+    border:solid 3px $negro;
+    margin:0;
+    padding:8px 13px;
+    font-size:25px;
+  }
+  
+  .top-2 {
+    right:-8px;
+    position:absolute;
+    top:46px;
+    transform:skew(-15deg);
+    /*border-radius: 12px;*/
+  }
+  
+  .rotar{
+    transform: rotate(-5.5deg);
+  }
+
+  .text-3 {
+    /*background-color:whitesmoke;*/
+    background-image:$fondo-azul;
+    border:solid 3px $negro;
+    margin:0;
+    padding:10px 15px;
+  }
+  
+
+  .top-3 {
+    left:18px;
+    position:absolute;
+    bottom:64.5px;
+    transform:skew(-15deg);
+  }
+
+  .rotar3{
+    transform: rotate(9.0deg);
+  }
+
+  .text-4 {
+    /*background-color:whitesmoke;*/
+    background-image:$fondo-violeta;
+    border:solid 3px $negro;
+    margin:0;
+    padding:10px 15px;
+  }
+  
+  .top-4 {
+    right: -10px;
+    position:absolute;
+    bottom:0px;
+    transform:skew(-15deg);
+  }

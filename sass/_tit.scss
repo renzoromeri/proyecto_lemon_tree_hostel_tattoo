@@ -1,0 +1,50 @@
+$dkgrey: #222;
+
+.ct{
+  padding: 10px;
+  margin: 25px 20px 165px 20px;
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.inner {
+    max-width: 1003px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.left {
+  padding: 10px;
+  margin: 5px;
+  /*float: left;*/
+}
+
+h1{
+  font-family:'Bangers', sans-serif;
+  color: $negro;
+}
+
+.big {
+    font-family: "Bangers";
+    margin: 0 20px -1em 20px;
+    text-shadow: -1px -1px yellow, 1px 1px orange,  2px 2px orange;
+    -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+    -moz-transform: rotate(-10deg) skew(-10deg, 0);
+    -ms-transform: rotate(-10deg) skew(-10deg, 0);
+    -o-transform: rotate(-10deg) skew(-10deg, 0);
+    transform: rotate(-10deg) skew(-10deg, 0);
+    padding: 10px 20px 50px 20px;
+    float: left;
+    width: 100%;
+}
+  
+  h1.big {
+    font-size: 150px;
+    margin-bottom: -.75em;
+  }
+
+ 

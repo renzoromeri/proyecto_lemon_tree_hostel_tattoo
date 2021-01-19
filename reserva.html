@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head class="none">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Shade&family=Emilys+Candy&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script class="none" src="js/reserva.js"></script>    
+    
+    <title> Hostel en Mendoza | LEMON TREE Hostel & Tattoo | Reservation page</title>
+    <meta name="description" content="Conoce el hostel más chill de Mendoza. Déjate llevar por sus dibujos y vuelve a sentirte como un niño.. Piscina, un gran jardín, rodeado de naturaleza y las mejores bodegas mendocinas a tan solo una bicicleta de distancia.">
+    <meta name="keywords"  content="hostel, mendoza, naturaleza, bodega, vino, chill, centro">
+</head>
+
+<body>
+    <header>
+        <a href="#nav" class="open"><img src="img/iconos/menu.png" alt="menu-open"></a>
+        <nav id="nav" class="nav-tam">
+            <a href="#" class="close-nav"><img src="img/iconos/close.png" alt="menu-close"></a>
+            <section class="c7-nav">
+                <div class="efecto">
+                    <img class="pequena2-nav" src="img/logo.png" alt="">
+                </div>
+            </section>
+            <section class="c62-nav">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="fondo5-nav" href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="fondo1-nav" href="hostel.html">Hostel</a>
+                        </li>
+                        <li>
+                            <a class="fondo2-nav" href="tattoo.html">Tattoo</a>
+                        </li>
+                        <li>
+                            <a class="fondo3-nav" href="mdz.html">Mendoza</a>
+                        </li>
+                        <li>
+                            <a class="fondo4-nav" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <section class="ct">
+        <div class="inner">
+            <div class="left">
+                <h1 class="big">LEMON TREE HOSTEL & TATTOO</h1>
+            </div>
+    </section>
+
+    <section class="c5-mdz">
+        <h2 class="a-mdz hostel-text">Consulta sobre Disponibilidad Aquí!!</h2>
+    </section>
+
+    <section class="c5-mdz">
+        <div class="panel-reserva">
+            <p id="sticky" class="text1 top-left1">Completa los datos:</p>
+            <form id="form" class="contacto-form">
+                <section class="c1-contacto">
+                    <div>
+                        <label class="a-mdz hostel-text">Nombre:</label>
+                    </div>
+                    <div>
+                        <input id="nombre" type="text" class="form-control nombre" name="nombre" onclick="cambiaColor()"/>
+                    </div>
+                    <div>
+                        <label class="a-mdz hostel-text">Fechas:</label>
+                    </div>
+                    <div class="c1-contacto">
+                        <button type="button" id="botModal" onclick="ver()" class="btn btn-primary boton contacto-boton">Elegir Fecha</button>
+                    </div>
+                    <div id="datosIn" class="a-mdz"></div>
+                    <div id="datosOut" class="a-mdz"></div>
+                    <div>
+                        <label class="a-mdz hostel-text">Tipo de Habitacion:</label>
+                    </div>
+                    <div>
+                        <select name="tipoHabit2" class="form-control" id="tipoHabit" onclick="precioHabit()">
+                            <option value="X">Elige tu habitacion</option>
+                            <option value="Privada">Privada (Cap. max. 2 pers.)</option>
+                            <option value="Compartida - Chica">Compartida - Chica (Cap. max. 4 pers.)</option>
+                            <option value="Compartida - Grande">Compartida - Grande (Cap. max. 6 pers.)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label id="Pagar" class="a-mdz infoReserva1">El valor de la habitacion elegida, por noche, es:</label>
+                    </div>
+                    <div id="precio" class="a-mdz"></div>
+                    
+                    <div>
+                        <label class="a-mdz hostel-text">Cantidad de Personas:</label>
+                    </div>
+                    <!-- <div id="personasA" class="infoReserva1">
+                        <input id="cantPers" type="text" class="form-control">
+                    </div> -->
+                    <div id="personasA" class="infoReserva1">
+                        <select name="cantPers" class="form-control" id="cantPers">
+                            <option value="1">1/2 pers.</option>
+                        </select>
+                    </div>
+                    <div id="personasB" class="infoReserva1">
+                        <select name="cantPers" class="form-control" id="cantPers">
+                            <option value="1">1 pers.</option>
+                            <option value="2">2 pers.</option>
+                            <option value="3">3 pers.</option>
+                            <option value="4">4 pers.</option>
+                        </select>
+                    </div>
+                    <div id="personasC" class="infoReserva1">
+                        <select name="cantPers" class="form-control" id="cantPers">
+                            <option value="1">1 pers.</option>
+                            <option value="2">2 pers.</option>
+                            <option value="3">3 pers.</option>
+                            <option value="4">4 pers.</option>
+                            <option value="5">5 pers.</option>
+                            <option value="6">6 pers.</option>
+                        </select>
+                    </div id="personasX" class="infoReserva1">
+
+                    <div>
+                        <input type="button" class="btn btn-primary boton contacto-boton" onclick="guardarDatos()" value="Ver datos de Reserva">
+                        <input type="button" class="btn btn-primary boton contacto-boton" onclick="calculaPrecio()" value="Calcular Precio">
+                    </div>
+                    <div id="datosReserva" class="c5-mdz infoReserva1">
+                        <h2 class="a-mdz hostel-text">Los datos de tu reserva son:</h2>
+                    </div>
+                    <div id="reserva" class="a-mdz"></div>
+
+                    <div id="pagar" class="c5-mdz infoReserva1">
+                        <h2 class="a-mdz hostel-text">El valor de tu reserva es de:</h2>
+                    </div>
+                    <div id="precioTotal" class="a-mdz"></div>
+                </section>
+                <section class="c1-contacto">
+                    <button type="reset" class="btn btn-primary boton contacto-boton">Limpiar Reserva</button>
+                    <button type="submit" class="btn btn-primary boton contacto-boton">Enviar Reserva</button>
+                </section>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="modal" id="modal-date" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Elige tu fecha de Llegada y de Partida</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group input-daterange fj-date">
+                            <div class="input-group-addon"> From </div>
+                            <input type="date" id="var1">
+                            <div class="input-group-addon"> To </div>
+                            <input type="date" id="var2">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" onclick="muestraFechas()" >Ver Disponibilidad</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="fondo-foot">
+        <section class="c4-foot">
+            <div>
+                <a href="#">Quienes Somos</a>
+            </div>
+            <div>
+                <a href="#">Trabaja con Nosotros</a>
+            </div>
+
+            <div>
+                <a href="#">Condiciones de Huespedes</a>
+            </div>
+
+            <div>
+                <a href="#">Condiciones de Grupos</a>
+            </div>
+
+            <div>
+                <a href="#">Politicas de Privacidad</a>
+            </div>
+        </section>
+        <section class="c5-foot">
+            <img class="pequena3" src="img/logo.png" alt="">
+        </section>
+        <section class="c5-foot">
+            <p class="mov">2020 - LEMON TREE HOSTEL & TATTOO</P>
+        </section>
+    </footer>
+
+     <script class="none" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+    <script class="none" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous">
+    </script>
+   <script class="none" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>

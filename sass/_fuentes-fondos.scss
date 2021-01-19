@@ -1,0 +1,70 @@
+
+/*Fondos de nav*/
+
+@mixin fondo-nav($background-image,$height) {
+    background-image: $background-image;
+    height: $height;
+}
+
+
+ /*Tipografias*/
+
+ @font-face {
+  font-family: 'Comic Sans';
+  /*src: url("comic-sans-ms/comici.ttf");*/
+  src: url("/comic-sans-ms/COMIC.TTF"),
+  url("/comic-sans-ms/comici.ttf"),
+  url("/comic-sans-ms/ComicSansMS3.ttf"),
+  url("/comic-sans-ms/comicz.ttf"),
+  url("/comic-sans-ms/design.graffiti.comicsansms.ttf"),
+  url("/comic-sans-ms/design.graffiti.comicsansmsgras.ttf"),
+}
+
+ .a-main{
+    font-family: 'Bangers', cursive;
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+  a:hover,
+  input:hover{
+    background-color: $blanco;
+    text-decoration: none;
+    background-image: none;
+  }
+
+  .ca:hover{
+    background-color: $blanco;
+    text-decoration: none;
+  }
+
+  form {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 5px;
+   }
+   
+   .boton{
+     margin: 5px;
+   }
+
+   .pequena{
+    width: 50px; height: 50px;
+  }
+
+  .a2{
+    padding: 5px;
+    margin: 10px;
+    border-style: none;
+  }
+
+  .a3 {
+    @extend.a2;
+  }
+
+  .a3:hover{
+    background-color: $negro;
+    text-decoration: none;
+    background-image: none;
+  }

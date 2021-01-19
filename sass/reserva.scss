@@ -1,0 +1,18 @@
+.none {
+  display: none;
+}
+
+.panel-reserva {
+  @extend.panel1;
+  height: auto;
+}
+
+.infoReserva1{
+    display: none;
+}
+
+.infoReserva2{
+    display: inline;
+}
+
+
